@@ -49,7 +49,6 @@ train_generator, validation_generator = data_generators(train_dir=DATA_DIR+'/tra
                                                              augment=DATA_AUGMENTATION)
 
 ### Define Model 
-
 if MODE ==  'build': #'load' #
     CNN = Basic_CNN(
         input_dim=(32, 32, 3)
@@ -62,7 +61,6 @@ else:
 
 
 ### Train the Model
-
 CNN.compile(LEARNING_RATE)
 
 callbacks = [
